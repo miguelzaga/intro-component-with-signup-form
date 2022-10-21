@@ -1,0 +1,79 @@
+@use "./../01-abstracts/" as *;
+
+.intro {
+  padding: 88px 24px 68px;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(28px);
+    line-height: rem(36px);
+    letter-spacing: rem(-0.291667px);
+    margin-bottom: 16px;
+  }
+
+  &__trial {
+    background-color: $purple;
+    padding: 18px 66px;
+    text-align: center;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    background: #ffffff;
+    padding: 24px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+  }
+
+  &__input {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 15px 19px;
+    color: $black;
+    font-weight: 600;
+    font-size: rem(14px);
+    line-height: rem(26px);
+    letter-spacing: rem(0.25px);
+
+    &::placeholder {
+      color: $black;
+      opacity: 0.75;
+    }
+  }
+
+  &__button {
+    background-color: $green;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: rem(15px);
+    line-height: rem(26px);
+    text-align: center;
+    letter-spacing: rem(1px);
+    margin-bottom: 8px;
+  }
+
+  &__terms {
+    font-weight: 500;
+    font-size: rem(11px);
+    line-height: rem(21px);
+    text-align: center;
+    color: #bab7d4;
+    max-width: 249px;
+    margin: auto;
+  }
+}

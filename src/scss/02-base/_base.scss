@@ -1,2 +1,6 @@
 @use "./../01-abstracts/" as *;
 
+body {
+  background: url("/src/images/bg-intro-mobile.png");
+  background-color: $red;
+}

@@ -13,7 +13,7 @@ function App() {
       </div>
       <div className="intro__cta">
         <div className="intro__trial">
-          Try it free 7 days then $20/mo. thereafter
+          <b className="bold">Try it free 7 days</b> then $20/mo. thereafter
         </div>
         <form className="intro__form">
           <input
@@ -36,7 +36,10 @@ function App() {
             Claim your free trial
           </button>
           <p className="intro__terms">
-            By clicking the button, you are agreeing to our Terms and Services
+            By clicking the button, you are agreeing to our{" "}
+            <a className="intro__terms-anchor" href="#">
+              Terms and Services
+            </a>
           </p>
         </form>
       </div>

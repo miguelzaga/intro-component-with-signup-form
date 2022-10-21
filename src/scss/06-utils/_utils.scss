@@ -1,1 +1,9 @@
 @use "./../01-abstracts/" as *;
+
+.bold {
+  font-weight: 700;
+}
+
+.highlight {
+  color: $red;
+}
