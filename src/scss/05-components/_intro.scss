@@ -2,10 +2,26 @@
 
 .intro {
   padding: 88px 24px 68px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 45px;
+  row-gap: 64px;
+  @include breakpoint($x-lg) {
+    padding: 121px;
+  }
 
   &__text {
     text-align: center;
-    margin-bottom: 64px;
+    flex-basis: 525px;
+    @include breakpoint(1158px) {
+      text-align: left;
+    }
+  }
+
+  &__cta {
+    flex-basis: 540px;
   }
 
   &__title {
@@ -14,15 +30,27 @@
     line-height: rem(36px);
     letter-spacing: rem(-0.291667px);
     margin-bottom: 16px;
+    @include breakpoint($x-lg) {
+      font-size: rem(50px);
+      line-height: rem(55px);
+      letter-spacing: rem(-0.520833px);
+      margin-bottom: 34px;
+    }
   }
 
   &__trial {
     background-color: $purple;
     padding: 18px 66px;
     text-align: center;
+    font-size: rem(15px);
+    line-height: rem(26px);
+    font-weight: 400;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
     border-radius: 10px;
     margin-bottom: 24px;
+    @include breakpoint($x-lg) {
+      padding: 17px;
+    }
   }
 
   &__form {
@@ -30,6 +58,9 @@
     padding: 24px;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
     border-radius: 10px;
+    @include breakpoint($x-lg) {
+      padding: 40px;
+    }
   }
 
   &__input {
@@ -41,12 +72,21 @@
     color: $black;
     font-weight: 600;
     font-size: rem(14px);
-    line-height: rem(26px);
+    line-height: rem(24px);
     letter-spacing: rem(0.25px);
+    caret-color: $purple;
+    @include breakpoint($x-lg) {
+      padding-left: 32px;
+      margin-bottom: 20px;
+    }
 
     &::placeholder {
       color: $black;
       opacity: 0.75;
+    }
+
+    &:focus-visible {
+      outline-color: $purple;
     }
   }
 
@@ -73,7 +113,7 @@
     line-height: rem(21px);
     text-align: center;
     color: #bab7d4;
-    max-width: 249px;
+    padding: 0 15px;
     margin: auto;
   }
 }

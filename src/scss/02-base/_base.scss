@@ -3,4 +3,8 @@
 body {
   background: url("/src/images/bg-intro-mobile.png");
   background-color: $red;
+  @include breakpoint($x-lg) {
+    background: url("/src/images/bg-intro-desktop.png");
+    background-color: $red;
+  }
 }
