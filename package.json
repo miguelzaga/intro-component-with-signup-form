@@ -1,22 +1,32 @@
 {
-  "name": "new-project",
+  "name": "intro-component-with-signup-form",
   "version": "1.0.0",
-  "description": "this is a new project",
+  "description": "frontend challenge",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,scss}\""
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css,scss}\"",
+    "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css,scss}\"",
+    "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts}\"",
+    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\"",
+    "test": "jest"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.2.1"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
 }
