@@ -19,19 +19,30 @@ function App() {
           <input
             className="intro__input"
             type="text"
+            name="first_name"
             placeholder="First Name"
+            required
           />
           <input
             className="intro__input"
+            name="last_name"
             type="text"
             placeholder="Last Name "
+            required
           />
           <input
             className="intro__input"
-            type="text"
+            name="email"
+            type="email"
             placeholder="Email Address"
+            required
           />
-          <input className="intro__input" type="text" placeholder="Password" />
+          <input
+            className="intro__input"
+            type="password"
+            placeholder="Password"
+            required
+          />
           <button type="submit" className="intro__button">
             Claim your free trial
           </button>

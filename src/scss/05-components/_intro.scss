@@ -88,6 +88,10 @@
     &:focus-visible {
       outline-color: $purple;
     }
+
+    &:invalid {
+      // background-color: red;
+    }
   }
 
   &__button {
