@@ -15,34 +15,46 @@ function App() {
         <div className="intro__trial">
           <b className="bold">Try it free 7 days</b> then $20/mo. thereafter
         </div>
-        <form className="intro__form">
-          <input
-            className="intro__input"
-            type="text"
-            name="first_name"
-            placeholder="First Name"
-            required
-          />
-          <input
-            className="intro__input"
-            name="last_name"
-            type="text"
-            placeholder="Last Name "
-            required
-          />
-          <input
-            className="intro__input"
-            name="email"
-            type="email"
-            placeholder="Email Address"
-            required
-          />
-          <input
-            className="intro__input"
-            type="password"
-            placeholder="Password"
-            required
-          />
+        <form noValidate className="intro__form">
+          <div className="intro__input-container">
+            <input
+              className="intro__input"
+              type="text"
+              name="first_name"
+              placeholder="First Name"
+              required
+            />
+            <p className="intro__input-error">Error</p>
+          </div>
+          <div className="intro__input-container">
+            <input
+              className="intro__input"
+              name="last_name"
+              type="text"
+              placeholder="Last Name "
+              required
+            />
+            <p className="intro__input-error">Error</p>
+          </div>
+          <div className="intro__input-container">
+            <input
+              className="intro__input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <p className="intro__input-error">Error</p>
+          </div>
+          <div className="intro__input-container">
+            <input
+              className="intro__input"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <p className="intro__input-error">Error</p>
+          </div>
           <button type="submit" className="intro__button">
             Claim your free trial
           </button>

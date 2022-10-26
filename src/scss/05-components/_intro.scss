@@ -67,7 +67,6 @@
     border: 1px solid #dedede;
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 16px;
     padding: 15px 19px;
     color: $black;
     font-weight: 600;
@@ -75,9 +74,23 @@
     line-height: rem(24px);
     letter-spacing: rem(0.25px);
     caret-color: $purple;
+    &-container {
+      margin-bottom: 16px;
+    }
     @include breakpoint($x-lg) {
       padding-left: 32px;
-      margin-bottom: 20px;
+      &-container {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-error {
+      color: $red;
+      font-style: italic;
+      font-size: rem(11px);
+      text-align: right;
+      line-height: rem(16px);
+      margin-top: 6px;
     }
 
     &::placeholder {
@@ -90,7 +103,7 @@
     }
 
     &:invalid {
-      // background-color: red;
+      //  background: url("/src/images/icon-error.svg");
     }
   }
 
