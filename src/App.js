@@ -1,4 +1,5 @@
 import { useState } from "react";
+import formValidation from "./scripts/formValidation";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <div className="intro__trial">
           <b className="bold">Try it free 7 days</b> then $20/mo. thereafter
         </div>
-        <form noValidate className="intro__form">
+        <form onSubmit={formValidation} noValidate className="intro__form">
           <div className="intro__input-container">
             <input
               className="intro__input"
@@ -49,6 +50,7 @@ function App() {
           <div className="intro__input-container">
             <input
               className="intro__input"
+              name="password"
               type="password"
               placeholder="Password"
               required
