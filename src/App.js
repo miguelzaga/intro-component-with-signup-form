@@ -25,7 +25,7 @@ function App() {
               placeholder="First Name"
               required
             />
-            <p className="intro__input-error">Error</p>
+            <p className="intro__input-error"></p>
           </div>
           <div className="intro__input-container">
             <input
@@ -35,7 +35,7 @@ function App() {
               placeholder="Last Name "
               required
             />
-            <p className="intro__input-error">Error</p>
+            <p className="intro__input-error"></p>
           </div>
           <div className="intro__input-container">
             <input
@@ -45,7 +45,7 @@ function App() {
               placeholder="Email Address"
               required
             />
-            <p className="intro__input-error">Error</p>
+            <p className="intro__input-error"></p>
           </div>
           <div className="intro__input-container">
             <input
@@ -55,7 +55,7 @@ function App() {
               placeholder="Password"
               required
             />
-            <p className="intro__input-error">Error</p>
+            <p className="intro__input-error"></p>
           </div>
           <button type="submit" className="intro__button">
             Claim your free trial
