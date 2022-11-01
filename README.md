@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/intro-component-with-signup-form-using-react-and-scss-5iURbwoOjT](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-using-react-and-scss-5iURbwoOjT)
-- Live Site URL: [https://intro-component-with-signup-form-lyart-alpha.vercel.app/](https://intro-component-with-signup-form-lyart-alpha.vercel.app/)
+- Live Site URL: [https://intro-component-with-signup-form-miguelzaga.vercel.app/](https://intro-component-with-signup-form-miguelzaga.vercel.app/)
 
 ## My process
 
